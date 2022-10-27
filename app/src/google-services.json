@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "276742422222",
+    "project_id": "gosar-3d518",
+    "storage_bucket": "gosar-3d518.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276742422222:android:0c8a2566e6e77cb5405a9f",
+        "android_client_info": {
+          "package_name": "com.spopli.gosarconstruction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276742422222-ic2t9u1j13pdqie7vq59lei4sfaeb02m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spopli.gosarconstruction",
+            "certificate_hash": "3640835f639130ed4d974e41acc3cd4c2a819633"
+          }
+        },
+        {
+          "client_id": "276742422222-ag6l34gojf6ibe866c4o29dt5tumfd47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy3zyp9W51YVNpd6Etj1dNSMqIRn8xvvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276742422222-ag6l34gojf6ibe866c4o29dt5tumfd47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

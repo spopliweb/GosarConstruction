@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/goLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_varsha_construction_foreground" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/goLogo"
+        android:id="@+id/goUser"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goUser"
+        android:hint="@string/password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/goUserPass"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goUserPass"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/goUserLoginBtn"/>
+
+</RelativeLayout>

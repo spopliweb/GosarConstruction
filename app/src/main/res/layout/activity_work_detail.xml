@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:gravity="center"
+    tools:context=".WorkDetailActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goCurrentDate"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description of Work"
+        android:layout_below="@id/goCurrentDate"
+        android:id="@+id/goWorkDes"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkDes"
+        android:id="@+id/goWorkLocal"
+        android:layout_marginTop="10dp"
+        android:hint="Local"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkLocal"
+        android:layout_marginTop="10dp"
+        android:hint="Unit"
+        android:id="@+id/goWorkUnit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkUnit"
+        android:layout_marginTop="10dp"
+        android:hint="Total Quantity"
+        android:id="@+id/goWorkQty"/>
+
+    <EditText
+        android:id="@+id/goWorkRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkQty"
+        android:layout_marginTop="10dp"
+        android:hint="Remarks"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkRemark"
+        android:layout_marginTop="10dp"
+        android:id="@+id/goWorkBtn"
+        android:text="Add"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goWorkRemark"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:layout_alignParentRight="true"
+        android:id="@+id/goWorkBackBtn"/>
+</RelativeLayout>

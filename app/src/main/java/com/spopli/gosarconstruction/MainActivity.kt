@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.spopli.gosarconstruction.databinding.ActivityMainBinding
@@ -17,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding =ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        binding.toolbarOne.toolbarLayout.setNavigationOnClickListener {
+            binding.myDrawer.openDrawer(Gravity.LEFT)
+        }
+
         auth = FirebaseAuth.getInstance()
         val sharedPreferences : SharedPreferences = getSharedPreferences("User Data", MODE_PRIVATE)
         val email: String? = sharedPreferences.getString("Email", "")

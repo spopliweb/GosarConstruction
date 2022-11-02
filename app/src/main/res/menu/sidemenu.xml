@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Work Report"
+        android:id="@+id/item1Menu"/>
+    <item
+        android:title="Finance Report"
+        android:id="@+id/item2Menu"/>
+    <item
+        android:title="Machinery Report"
+        android:id="@+id/item3Menu"/>
+    <item
+        android:title="Manpower Report"
+        android:id="@+id/itemMenu"/>
+    <item
+        android:id="@+id/materialMenu"
+        android:title="Material Report"/>
+    <item
+        android:id="@+id/signOutMenu"
+        android:title="Sign Out"/>
+</menu>

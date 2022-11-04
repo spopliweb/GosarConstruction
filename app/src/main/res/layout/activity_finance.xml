@@ -1,78 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
-    android:gravity="center"
+    android:id="@+id/myDrawer"
     tools:context=".FinanceActivity">
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/goCurrentDate"
-        android:textSize="20sp"/>
-    <EditText
-        android:id="@+id/goFinOpening"
-        android:layout_below="@id/goCurrentDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Opening Balance" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/goFinReceipt"
+        <include
+            android:id="@+id/toolbarOne"
+            layout="@layout/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinOpening"
-        android:layout_marginTop="20dp"
-        android:hint="Receipt" />
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goCurrentDate"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/goFinOpening"
+            android:layout_below="@id/goCurrentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Opening Balance" />
 
-    <EditText
-        android:id="@+id/goFinExpend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinReceipt"
-        android:layout_marginTop="20dp"
-        android:hint="Expenditure" />
+        <EditText
+            android:id="@+id/goFinReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinOpening"
+            android:layout_marginTop="20dp"
+            android:hint="Receipt" />
 
-    <EditText
-        android:id="@+id/goFinClosing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinExpend"
-        android:layout_marginTop="20dp"
-        android:hint="Closing Balance" />
+        <EditText
+            android:id="@+id/goFinExpend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinReceipt"
+            android:layout_marginTop="20dp"
+            android:hint="Expenditure" />
 
-    <EditText
-        android:id="@+id/goFinVisitor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinClosing"
-        android:layout_marginTop="20dp"
-        android:hint="Visitors" />
+        <EditText
+            android:id="@+id/goFinClosing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinExpend"
+            android:layout_marginTop="20dp"
+            android:hint="Closing Balance" />
 
-    <EditText
-        android:id="@+id/goFinRemark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinVisitor"
-        android:layout_marginTop="20dp"
-        android:hint="Remark" />
-    <Button
+        <EditText
+            android:id="@+id/goFinVisitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinClosing"
+            android:layout_marginTop="20dp"
+            android:hint="Visitors" />
+
+        <EditText
+            android:id="@+id/goFinRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinVisitor"
+            android:layout_marginTop="20dp"
+            android:hint="Remark" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinRemark"
+            android:layout_marginTop="20dp"
+            android:id="@+id/goFinBtn"
+            android:text="Add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFinRemark"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Back"
+            android:layout_alignParentRight="true"
+            android:id="@+id/goFinBackBtn"/>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinRemark"
-        android:layout_marginTop="20dp"
-        android:id="@+id/goFinBtn"
-        android:text="Add"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/goFinRemark"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="Back"
-        android:layout_alignParentRight="true"
-        android:id="@+id/goFinBackBtn"/>
-</RelativeLayout>
+        android:layout_height="match_parent"
+        app:menu="@menu/sidemenu"
+        android:background="@color/teal_200"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout"
+        android:id="@+id/navigationView" />
+</androidx.drawerlayout.widget.DrawerLayout>

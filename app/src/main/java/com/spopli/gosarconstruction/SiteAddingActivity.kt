@@ -3,6 +3,7 @@ package com.spopli.gosarconstruction
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -19,6 +20,12 @@ class SiteAddingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySiteAddingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        binding.toolbarOne.toolbarLayout.setNavigationOnClickListener {
+            binding.myDrawer.openDrawer(Gravity.LEFT)
+        }
 
         binding.mySiteBtn.setOnClickListener {
             val siteName = binding.mySiteName.text.toString()

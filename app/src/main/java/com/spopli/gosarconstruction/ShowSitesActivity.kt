@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -21,6 +22,12 @@ class ShowSitesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityShowSitesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        binding.toolbarOne.toolbarLayout.setNavigationOnClickListener {
+            binding.myDrawer.openDrawer(Gravity.LEFT)
+        }
 
         spinnerRef = FirebaseDatabase.getInstance().reference.child("Sites")
         list = ArrayList()

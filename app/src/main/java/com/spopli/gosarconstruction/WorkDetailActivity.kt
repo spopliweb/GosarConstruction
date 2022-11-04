@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -19,11 +20,14 @@ class WorkDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
+
+        binding.toolbarOne.toolbarLayout.setNavigationOnClickListener {
+            binding.myDrawer.openDrawer(Gravity.LEFT)
+        }
 
         val sharedPreferences : SharedPreferences = getSharedPreferences("User Data", MODE_PRIVATE)
         val siteOne: String? = sharedPreferences.getString("Site Name", "")
-
-
 
         val sdf = SimpleDateFormat("dd-MM-yyyy")
         val currentDate = sdf.format(Date())

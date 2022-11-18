@@ -65,14 +65,14 @@
             android:layout_below="@id/goFinClosing"
             android:layout_marginTop="20dp"
             android:hint="Visitors" />
-
         <EditText
             android:id="@+id/goFinRemark"
+            android:layout_below="@id/goFinVisitor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/goFinVisitor"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="13dp"
             android:hint="Remark" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,15 +80,16 @@
             android:layout_marginTop="20dp"
             android:id="@+id/goFinBtn"
             android:text="Add"/>
+
         <Button
+            android:id="@+id/goFinBackBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/goFinRemark"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="Back"
             android:layout_alignParentRight="true"
-            android:id="@+id/goFinBackBtn"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Back" />
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

@@ -1,11 +1,13 @@
 package com.spopli.gosarconstruction
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.spopli.gosarconstruction.databinding.ActivityManpowerBinding
@@ -47,6 +49,18 @@ class ManpowerActivity : AppCompatActivity() {
             }.addOnFailureListener {
                 Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
             }
+        }
+        binding.goManBackBtn.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Are you sure you want to go back!?")
+            builder.setPositiveButton("Yes", DialogInterface.OnClickListener { dialogInterface, i ->
+                val intent = Intent(this,WorkDetailActivity::class.java)
+                startActivity(intent)
+            })
+            builder.setNegativeButton("No", DialogInterface.OnClickListener { dialogInterface, i ->
+                dialogInterface.dismiss()
+            })
+            builder.show()
         }
     }
 }

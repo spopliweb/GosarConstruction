@@ -44,12 +44,12 @@
             android:hint="Local"/>
 
         <EditText
+            android:id="@+id/goWorkUnit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/goWorkLocal"
             android:layout_marginTop="10dp"
-            android:hint="Unit"
-            android:id="@+id/goWorkUnit"/>
+            android:hint="Unit" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

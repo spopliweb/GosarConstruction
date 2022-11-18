@@ -21,16 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        binding.toolbarOne.toolbarLayout.setNavigationOnClickListener {
-            binding.myDrawer.openDrawer(Gravity.LEFT)
-        }
 
         auth = FirebaseAuth.getInstance()
         val sharedPreferences : SharedPreferences = getSharedPreferences("User Data", MODE_PRIVATE)
         val email: String? = sharedPreferences.getString("Email", "")
 
         if(email != ""){
-            val intent:Intent = Intent(this, ShowSitesActivity::class.java)
+            val intent:Intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }else{
             binding.goUserLoginBtn.setOnClickListener {

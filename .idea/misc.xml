@@ -5,14 +5,15 @@
       <map>
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/drawable/ic_varsha_construction_background.xml" value="0.1" />
+        <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_finance.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_machinery.xml" value="0.2" />
-        <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_manpower.xml" value="0.1" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_material.xml" value="0.1" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_show_sites.xml" value="0.1" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_site_adding.xml" value="0.1" />
-        <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_work_detail.xml" value="0.1" />
+        <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/activity_work_detail.xml" value="0.2" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/drawer_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/header_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/GosarConstruction/app/src/main/res/layout/toolbar.xml" value="0.2351851851851852" />
